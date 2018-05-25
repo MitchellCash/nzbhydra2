@@ -120,11 +120,11 @@ gulp.task('less', function () {
 
 gulp.task('copy-assets', function () {
     var fontDest = staticFolder + '/fonts';
-    var fonts1 = gulp.src("bower_components/bootstrap/fonts/*")
+    var fonts1 = gulp.src("node_modules/bootstrap/fonts/*")
         .pipe(cached("fonts1"))
         .pipe(gulp.dest(fontDest));
 
-    var fonts2 = gulp.src("bower_components/font-awesome/fonts/*")
+    var fonts2 = gulp.src("node_modules/font-awesome/fonts/*")
         .pipe(cached("fonts2"))
         .pipe(gulp.dest(fontDest));
 
